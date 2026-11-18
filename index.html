@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#12233f">
+    <meta name="description" content="Aprende aritmética con explicaciones, ejercicios interactivos y juegos matemáticos.">
+    <title>Aritmética Interactiva | Aprende practicando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="floating-numbers" aria-hidden="true">
+        <span>+</span><span>−</span><span>×</span><span>÷</span><span>√</span><span>π</span>
+    </div>
+
+    <header class="site-header">
+        <a class="logo" href="#inicio" aria-label="Aritmética Interactiva, inicio">
+            <span class="logo-mark" aria-hidden="true"><i class="fa-solid fa-calculator"></i></span>
+            <span class="brand-text">
+                <span class="brand-name">ARITMÉTICA <strong>INTERACTIVA</strong></span>
+                <span class="brand-line" aria-hidden="true"></span>
+                <span class="brand-university">Universidad Privada de Trujillo</span>
+            </span>
+        </a>
+        <nav aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#temas">Temas</a>
+            <a href="#ejemplos">Ejercicios</a>
+            <a href="#juego">Juegos</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="hero" id="inicio" data-page="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span aria-hidden="true">✦</span> Un paso a la vez, ¡tú puedes!</p>
+                <h1 id="hero-title">Las matemáticas se aprenden <span>practicando.</span></h1>
+                <p class="hero-description">Explora conceptos, resuelve ejercicios y juega mientras fortaleces tu razonamiento matemático.</p>
+                <a class="button button-primary" href="#temas">Comenzar a aprender <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <div class="hero-note"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Aprende a tu ritmo, sin presión</div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?w=1000" alt="Estudiantes aprendiendo juntos en un salón de clases">
+                <div class="math-note note-one" aria-hidden="true">12 × 8 = 96 <span>¡Bien hecho!</span></div>
+                <div class="math-note note-two" aria-hidden="true"><span class="note-icon">＋</span> ¡A pensar!</div>
+                <div class="hero-sticker" aria-hidden="true">¡Aprender<br>es genial!</div>
+            </div>
+        </section>
+
+        <section class="section section-topics" id="temas" data-page="temas" aria-labelledby="topics-title">
+            <div class="section-heading">
+                <p class="eyebrow">TU CAJA DE HERRAMIENTAS</p>
+                <h2 class="title" id="topics-title">Temas principales</h2>
+                <p>Construye una base sólida y descubre nuevas formas de resolver problemas.</p>
+            </div>
+            <div class="temas-grid">
+                <article class="tema-card" data-exercise="naturales" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Números Naturales"><img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-hashtag" aria-hidden="true"></i><h3>Números Naturales</h3><p>Conceptos básicos y secuencias numéricas.</p></div></article>
+                <article class="tema-card" data-exercise="operaciones" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Operaciones Básicas"><img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-plus" aria-hidden="true"></i><h3>Operaciones Básicas</h3><p>Suma, resta, multiplicación y división.</p></div></article>
+                <article class="tema-card" data-exercise="potenciacion" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Potenciación"><img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-chart-line" aria-hidden="true"></i><h3>Potenciación</h3><p>Potencias y exponentes.</p></div></article>
+                <article class="tema-card" data-exercise="divisibilidad" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Divisibilidad"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-divide" aria-hidden="true"></i><h3>Divisibilidad</h3><p>Criterios de divisibilidad.</p></div></article>
+                <article class="tema-card" data-exercise="primos" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Números Primos"><img src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-star" aria-hidden="true"></i><h3>Números Primos</h3><p>Identificación de números primos.</p></div></article>
+                <article class="tema-card" data-exercise="mcm-mcd" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar MCM y MCD"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-calculator" aria-hidden="true"></i><h3>MCM y MCD</h3><p>Mínimo común múltiplo y máximo común divisor.</p></div></article>
+                <article class="tema-card" data-exercise="fracciones" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Fracciones"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-pizza-slice" aria-hidden="true"></i><h3>Fracciones</h3><p>Representación y operaciones con fracciones.</p></div></article>
+                <article class="tema-card" data-exercise="decimales" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Decimales"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-percent" aria-hidden="true"></i><h3>Decimales</h3><p>Operaciones con números decimales.</p></div></article>
+                <article class="tema-card" data-exercise="razones" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Razones y Proporciones"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><h3>Razones y Proporciones</h3><p>Relaciones matemáticas y proporcionalidad.</p></div></article>
+                <article class="tema-card" data-exercise="porcentajes" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Porcentajes"><img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-percent" aria-hidden="true"></i><h3>Porcentajes</h3><p>Cálculo e interpretación de porcentajes.</p></div></article>
+                <article class="tema-card" data-exercise="regla-de-tres" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Practicar Regla de Tres"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600" alt="" loading="lazy"><div class="topic-content"><i class="fa-solid fa-ruler" aria-hidden="true"></i><h3>Regla de Tres</h3><p>Proporcionalidad directa e inversa.</p></div></article>
+            </div>
+
+        </section>
+
+        <section class="section examples-section ejemplos" id="ejemplos" data-page="ejercicios" aria-labelledby="examples-title">
+            <div class="section-heading"><p class="eyebrow">PASO A PASO</p><h2 class="title" id="examples-title">Ejemplos resueltos</h2><p>Una pequeña estrategia puede hacer una gran diferencia.</p></div>
+            <div class="ejemplo-container">
+                <article class="ejemplo"><span class="example-number">01</span><h3>Suma</h3><p>25 + 17</p><p>25 + 10 = 35</p><p>35 + 7 = <strong>42</strong></p></article>
+                <article class="ejemplo"><span class="example-number">02</span><h3>Resta</h3><p>50 − 23</p><p>50 − 20 = 30</p><p>30 − 3 = <strong>27</strong></p></article>
+                <article class="ejemplo"><span class="example-number">03</span><h3>Multiplicación</h3><p>9 × 8 = <strong>72</strong></p></article>
+                <article class="ejemplo"><span class="example-number">04</span><h3>División</h3><p>48 ÷ 6 = <strong>8</strong></p></article>
+                <article class="ejemplo"><span class="example-number">05</span><h3>Porcentajes</h3><p>25% de 200 = <strong>50</strong></p></article>
+                <article class="ejemplo"><span class="example-number">06</span><h3>Fracciones</h3><p>½ + ½ = <strong>1</strong></p></article>
+            </div>
+        </section>
+
+        <section class="section quiz-section" id="ejercicios" data-page="ejercicios" aria-labelledby="quiz-title">
+            <div class="section-heading"><p class="eyebrow">PONTE A PRUEBA</p><h2 class="title" id="quiz-title">Ejercicios interactivos</h2><p>Elige una respuesta para cada pregunta. ¡Tú puedes!</p></div>
+            <div class="quiz">
+                <div class="progress-label"><span>Tu progreso</span><span id="progressText">0% completado</span></div>
+                <div class="progress-container" role="progressbar" aria-label="Progreso del cuestionario" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressBar" class="progress-bar"></div></div>
+                <div class="question" role="group" aria-labelledby="question-1"><h3 id="question-1">1. ¿Cuánto es 25 + 17?</h3><div class="answer-options"><button type="button" class="answer-button" data-correct="true">42</button><button type="button" class="answer-button" data-correct="false">38</button><button type="button" class="answer-button" data-correct="false">40</button></div></div>
+                <div class="question" role="group" aria-labelledby="question-2"><h3 id="question-2">2. ¿Cuánto es 9 × 8?</h3><div class="answer-options"><button type="button" class="answer-button" data-correct="false">64</button><button type="button" class="answer-button" data-correct="true">72</button><button type="button" class="answer-button" data-correct="false">81</button></div></div>
+                <div class="question" role="group" aria-labelledby="question-3"><h3 id="question-3">3. ¿Cuánto es el 25% de 200?</h3><div class="answer-options"><button type="button" class="answer-button" data-correct="false">40</button><button type="button" class="answer-button" data-correct="true">50</button><button type="button" class="answer-button" data-correct="false">25</button></div></div>
+                <div class="quiz-footer"><p class="score-card">Puntaje <strong><span id="score">0</span><span class="score-total"> / 3</span></strong></p><button class="button button-secondary" id="restartQuiz" type="button"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i> Reiniciar evaluación</button></div>
+                <p id="feedbackMessage" class="feedback" role="status" aria-live="polite"></p>
+                <p id="mensaje" class="quiz-result" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="section game-section" id="juego" data-page="juego" aria-labelledby="game-title">
+            <div class="game-panel">
+                <div class="game-intro"><p class="eyebrow">JUEGO MATEMÁTICO</p><h2 class="title" id="game-title">¡Desafía tu mente!</h2><p>Resuelve tantas operaciones como puedas antes de que termine el tiempo.</p><div class="game-stats"><div><span class="stat-label"><i class="fa-regular fa-clock" aria-hidden="true"></i> Tiempo</span><strong><span id="time">30</span><small> seg</small></strong></div><div><span class="stat-label"><i class="fa-solid fa-trophy" aria-hidden="true"></i> Puntos</span><strong id="points">0</strong></div></div></div>
+                <div class="game-box">
+                    <p class="game-instruction">¿Cuánto es…?</p>
+                    <h3 id="operation" aria-live="polite">5 + 5</h3>
+                    <form id="gameForm" novalidate>
+                        <label class="sr-only" for="respuesta">Tu respuesta</label>
+                        <input type="number" id="respuesta" inputmode="numeric" placeholder="Escribe tu respuesta" autocomplete="off" aria-describedby="gameFeedback">
+                        <button class="button button-primary" id="submitAnswer" type="submit">Responder <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                    </form>
+                    <p id="gameFeedback" class="game-feedback" role="status" aria-live="polite">Escribe tu respuesta o presiona Enter.</p>
+                    <button class="button button-text" id="restartGame" type="button"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i> Reiniciar juego</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resources-section" id="recursos" data-page="recursos" aria-labelledby="resources-title">
+            <div class="section-heading"><p class="eyebrow">SIGUE EXPLORANDO</p><h2 class="title" id="resources-title">Recursos educativos</h2><p>Desarrolla habilidades que te acompañarán dentro y fuera del aula.</p></div>
+            <div class="resources">
+                <article class="resource-card"><span><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span><h3>Guías PDF</h3><p>Mejora la resolución de problemas.</p></article>
+                <article class="resource-card"><span><i class="fa-solid fa-bolt" aria-hidden="true"></i></span><h3>Calcula mentalmente</h3><p>Fortalece el cálculo mental.</p></article>
+                <article class="resource-card"><span><i class="fa-solid fa-eye" aria-hidden="true"></i></span><h3>Enfoca tu atención</h3><p>Incrementa la concentración.</p></article>
+                <article class="resource-card"><span><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span><h3>Piensa críticamente</h3><p>Potencia el pensamiento crítico.</p></article>
+            </div>
+            <div class="video-library">
+                <div class="video-library-heading">
+                    <div>
+                        <p class="eyebrow">MIRA Y APRENDE</p>
+                        <h3>Aprende con videos</h3>
+                    </div>
+                    <p>Explora explicaciones en video y refuerza lo aprendido.</p>
+                </div>
+                <div class="video-grid">
+                    <a class="video-card" href="https://www.youtube.com/results?search_query=aritm%C3%A9tica+operaciones+b%C3%A1sicas+explicaci%C3%B3n" target="_blank" rel="noopener noreferrer">
+                        <span class="video-preview video-preview-blue" aria-hidden="true"><i class="fa-solid fa-circle-play"></i><span>＋ − × ÷</span></span>
+                        <span class="video-card-title">Operaciones básicas</span>
+                        <span class="video-card-link">Buscar videos <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="video-card" href="https://www.youtube.com/results?search_query=fracciones+explicaci%C3%B3n+ejercicios" target="_blank" rel="noopener noreferrer">
+                        <span class="video-preview video-preview-orange" aria-hidden="true"><i class="fa-solid fa-circle-play"></i><span>½ + ¼</span></span>
+                        <span class="video-card-title">Fracciones paso a paso</span>
+                        <span class="video-card-link">Buscar videos <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="video-card" href="https://www.youtube.com/results?search_query=porcentajes+explicaci%C3%B3n+ejercicios" target="_blank" rel="noopener noreferrer">
+                        <span class="video-preview video-preview-teal" aria-hidden="true"><i class="fa-solid fa-circle-play"></i><span>25 %</span></span>
+                        <span class="video-card-title">Porcentajes fáciles</span>
+                        <span class="video-card-link">Buscar videos <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contacto" data-page="contacto" aria-labelledby="contact-title">
+            <div class="section-heading">
+                <p class="eyebrow">NUESTRO EQUIPO</p>
+                <h2 class="title" id="contact-title">Contacto</h2>
+                <p>Conoce a los integrantes de Aritmética Interactiva.</p>
+            </div>
+            <div class="contact-grid">
+                <article class="contact-card"><span aria-hidden="true"><i class="fa-solid fa-user"></i></span><h3>GALLARDO VALVERDE, FREDY</h3><p>Equipo de Aritmética Interactiva</p></article>
+                <article class="contact-card"><span aria-hidden="true"><i class="fa-solid fa-user"></i></span><h3>MERINO PAICO, HARUMY</h3><p>Equipo de Aritmética Interactiva</p></article>
+                <article class="contact-card"><span aria-hidden="true"><i class="fa-solid fa-user"></i></span><h3>LLOCLLI QUISPE, ADELAIDA</h3><p>Equipo de Aritmética Interactiva</p></article>
+                <article class="contact-card"><span aria-hidden="true"><i class="fa-solid fa-user"></i></span><h3>CHAVEZ SILVA, JOSE DAVID</h3><p>Equipo de Aritmética Interactiva</p></article>
+                <article class="contact-card"><span aria-hidden="true"><i class="fa-solid fa-user"></i></span><h3>ATENCIO CORNEJO, EDITH JACQUELINE</h3><p>Equipo de Aritmética Interactiva</p></article>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="topic-dialog" id="topicExerciseDialog" aria-labelledby="topicDialogTitle">
+        <div class="topic-dialog-header">
+            <div>
+                <p class="eyebrow">PRACTICA LO APRENDIDO</p>
+                <h2 class="title" id="topicDialogTitle"></h2>
+            </div>
+            <button class="dialog-close" id="closeTopicDialog" type="button" aria-label="Cerrar ejercicio">&times;</button>
+        </div>
+        <p class="topic-question" id="topicQuestion"></p>
+        <form id="topicExerciseForm">
+            <label for="topicAnswer">Tu respuesta</label>
+            <div class="topic-answer-row">
+                <input id="topicAnswer" name="answer" type="text" inputmode="text" autocomplete="off" required>
+                <button class="button button-primary" type="submit">Comprobar</button>
+            </div>
+        </form>
+        <p class="topic-feedback" id="topicFeedback" role="status" aria-live="polite"></p>
+    </dialog>
+
+    <footer id="footer">
+        <a class="logo footer-logo" href="#inicio"><span class="logo-mark" aria-hidden="true"><i class="fa-solid fa-calculator"></i></span><span>ARITMÉTICA <strong>INTERACTIVA</strong></span></a>
+        <p>Aprender matemáticas puede ser divertido.</p>
+        <a class="contact-link" href="mailto:grupo2@aritmeticainteractiva.edu.pe"><i class="fa-regular fa-envelope" aria-hidden="true"></i> grupo2@aritmeticainteractiva.edu.pe</a>
+        <div class="socials" aria-hidden="true"><span><i class="fa-brands fa-facebook-f"></i></span><span><i class="fa-brands fa-instagram"></i></span><span><i class="fa-brands fa-youtube"></i></span><span><i class="fa-brands fa-tiktok"></i></span></div>
+        <small>© 2026 Aritmética Interactiva. Todos los derechos reservados.</small>
+    </footer>
+</body>
+</html>
